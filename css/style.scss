@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:regular,500,700,900&display&swap');
+@import '../scss/base/reset';
+@import '../scss/utils/varilables';
+@import '../scss/components/button';
+@import '../scss/components/title';
+
+@import '../scss/layout/header';
+@import '../scss/layout/footer';
+@import '../scss/layout/hero';
+@import '../scss/layout/about';
+@import '../scss/layout/procedures';
+@import '../scss/layout/why';
+@import '../scss/components/modal';
+@import '../scss/layout/find';
+
+
+
+[class*="__container"] {
+    max-width: 1270px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+body {
+    font-family: 'Roboto';
+    font-size: 18px;
+}
+
+.wrapper {
+    position: relative;
+    overflow: hidden;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    flex: 1 1 auto;
+}

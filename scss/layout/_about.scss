@@ -1,0 +1,123 @@
+.about {
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    @media(max-width:767.98px) {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    &__container {
+        display: flex;
+
+        @media(min-width:767.98px) {
+            gap: 32px;
+        }
+    }
+
+    &__content {
+        @media(min-width:991.98px) {
+            flex: 0 1 60%;
+        }
+    }
+
+    &__images {
+        @media(min-width:991.98px) {
+            flex: 0 1 40%;
+        }
+
+    }
+}
+
+.content-about {
+
+    &__title {
+        margin-bottom: 40px;
+
+        @media(max-width:767.98px) {
+            margin-bottom: 40px;
+        }
+
+        @media(max-width:479.98px) {
+            margin-bottom: 24px;
+        }
+
+        @media(min-width:767.98px) {
+            max-width: 529px;
+        }
+    }
+
+    &__text {
+        @media(min-width:767.98px) {
+            max-width: 700px;
+        }
+
+        &>p {
+            color: var(--primary-dark-color);
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 1.7;
+
+            /* 38/22 */
+            /* 172.727% */
+            @media(max-width:767.98px) {
+                font-size: 18px;
+            }
+
+            &>span {
+                font-weight: 600;
+            }
+        }
+
+        &>p:not(:last-child) {
+            margin-bottom: 40px;
+
+            @media(max-width:991.98px) {
+                margin-bottom: 30px;
+            }
+
+            @media(max-width:767.98px) {
+                margin-bottom: 20px;
+            }
+
+            @media(max-width:479.98px) {
+                margin-bottom: 16px;
+            }
+        }
+    }
+}
+
+
+.about {
+    &__images {}
+}
+
+.images-about {
+    display: grid;
+    row-gap: 30px;
+
+    &__img-wrapper {
+        &:nth-child(1) {
+            // grid-column: span 2;
+            // justify-self: start;
+            // margin-bottom: 40px;
+            margin-top: -30px;
+        }
+
+        &:nth-child(2) {
+            // grid-row: span 2;
+            // align-self: end;
+            margin-left: 30%;
+        }
+
+        @media(max-width:767.98px) {
+            display: none;
+        }
+    }
+
+    &__img {
+        border-radius: 50%;
+        max-width: 100%;
+    }
+}
