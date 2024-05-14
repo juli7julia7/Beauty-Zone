@@ -1,32 +1,52 @@
 .modal-is-hidden {
     display: none;
 }
-.active{
+
+.active {
     display: block;
 }
-.modal.modal--big{
+
+.modal.modal--big {
     position: fixed;
     top: 50%;
     z-index: 50;
     left: 50%;
     transform: translate(-50%, -50%);
 }
-
+.modal-btn-open{
+    transition: all 0.3s ease 0s;
+}
 
 .modal {
     &__body {
         position: relative;
         background-color: var(--primary-dark-color);
-        max-width: 723px;
+        width: 723px;
         height: 681px;
         color: var(--primary-color);
         border-radius: 48px;
         padding: 62px 20px;
         text-align: center;
-        @media(max-width:767.98px){
+
+        @media(max-width:991.98px) {
+            width: 570px;
+        }
+
+        @media(max-width:630.98px) {
             padding: 70px 20px;
             border-radius: 38px;
+            width: 450px;
+            height: 581px;
+        }
+
+        @media(max-width:479.98px) {
+            max-width: 380px;
+        }
+
+        @media(max-width:405.98px) {
+            max-width: 300px;
             height: 600px;
+
         }
 
         &--small {
@@ -47,13 +67,17 @@
         font-weight: 700;
         max-width: 435px;
         margin: 0 auto 40px;
-        @media(max-width:991.98px){
+
+        @media(max-width:991.98px) {
             font-size: 54px;
         }
-        @media(max-width:767.98px){
+
+        @media(max-width:630.98px) {
+            margin: 0 auto 24px;
             font-size: 44px;
         }
-        @media(max-width:479.98px){
+
+        @media(max-width:479.98px) {
             font-size: 34px;
         }
     }
@@ -86,6 +110,10 @@
         color: var(--primary-color);
         font-size: 13px;
         border: 2px solid var(--secondary-ligth-grey-color);
+
+        @media(max-width:600.98px) {
+            margin: 0 auto 16px;
+        }
 
         &--small {
             margin-bottom: 16px;
@@ -163,7 +191,9 @@
     z-index: 2;
     right: 42px;
     top: 42px;
-    @media(max-width:991.98px){
+    transition: all 0.3s ease 0s;
+
+    @media(max-width:991.98px) {
         top: 28px;
         right: 32px;
     }
