@@ -731,6 +731,18 @@ body {
   display: none;
 }
 
+.active {
+  display: block;
+}
+
+.modal.modal--big {
+  position: fixed;
+  top: 50%;
+  z-index: 50;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .modal__body {
   position: relative;
   background-color: var(--primary-dark-color);
@@ -738,7 +750,7 @@ body {
   height: 681px;
   color: var(--primary-color);
   border-radius: 48px;
-  padding: 42px 20px;
+  padding: 62px 20px;
   text-align: center;
 }
 @media (max-width: 767.98px) {
